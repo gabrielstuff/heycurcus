@@ -1,0 +1,21 @@
+name = "heycurcus"
+main = ".output/server/index.mjs"
+compatibility_date = "2025-02-15"
+compatibility_flags = ["nodejs_compat"]
+
+assets = { directory = ".output/public" }
+
+# AI Binding - Workers AI
+[ai]
+binding = "AI"
+
+# R2 Storage - User files
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "heycurcus-files"
+
+# [d1_databases]
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "heycurcus-db"
+# database_id = ""  # À remplir après création
